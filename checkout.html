@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout | Yasiru Gems &amp; Jewellery</title>
+<meta name="description" content="Checkout — Yasiru Gems & Jewellery.">
+<meta name="robots" content="noindex, follow">
+<link rel="canonical" href="https://www.yasirugems.com/checkout.html">
+<link rel="icon" type="image/png" href="YasiruGems.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body data-whatsapp-number="94712802569">
+
+<div class="bg-wash"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<header>
+  <div class="navbar glass">
+    <a href="index.html" class="brand">
+      <div class="logo-slot"><img src="YasiruGems.jpg"></div>
+      <div class="brand-name">Yasiru Gems<span>&amp; Jewellery</span></div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="what-we-do.html">What We Do</a></li>
+        <li><a href="shop.html">Shop Now</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+    <a href="shop.html" class="btn small primary">Continue Shopping</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu"><span></span></button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="what-we-do.html">What We Do</a>
+  <a href="shop.html">Shop Now</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<section class="section-pad" style="padding-top:150px;">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow">CHECKOUT</div>
+      <h2>Review &amp; <em>complete your order.</em></h2>
+    </div>
+
+    <!-- ============================================================
+         DEVELOPER NOTICE — remove this banner once a real payment
+         processor (Stripe or PayPal Checkout) is wired into the
+         "Complete Purchase" button below. Everything on this page —
+         the sample cart, totals, and the payment method list — is
+         placeholder markup ready for that integration; nothing here
+         charges a card yet.
+         ============================================================ -->
+    <div class="checkout-notice reveal">
+      This checkout page is a ready-to-connect layout. No payment processor is active yet — the "Complete Purchase" button below is intentionally disabled. To accept real payments, connect Stripe Checkout or PayPal's Smart Buttons to that button. Until then, the WhatsApp option beneath it is the working way for clients to complete an order.
+    </div>
+
+    <div class="checkout-grid">
+
+      <!-- ============================================================
+           ORDER SUMMARY — EDIT: this is SAMPLE data. Replace with a
+           real cart once you wire up JavaScript, or leave as a static
+           "order summary" layout if you plan to take orders manually
+           via WhatsApp and only use this page for higher-ticket
+           clients who specifically want a formal checkout view.
+           ============================================================ -->
+      <div class="checkout-card glass reveal">
+        <h3>Order Summary</h3>
+
+        <div class="cart-line">
+          <div class="cart-thumb photo-frame">
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?q=80&w=200&auto=format&fit=crop" alt="Royal Blue Sapphire Ring thumbnail">
+          </div>
+          <div class="cart-info">
+            <div class="name">Royal Blue Sapphire Ring</div>
+            <div class="meta">SKU: YG-R014 &middot; Qty: 1</div>
+          </div>
+          <div class="cart-price">USD 2,450</div>
+        </div>
+
+        <div class="cart-line">
+          <div class="cart-thumb photo-frame">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?q=80&w=200&auto=format&fit=crop" alt="Ceylon Ruby Stud Earrings thumbnail">
+          </div>
+          <div class="cart-info">
+            <div class="name">Ceylon Ruby Stud Earrings</div>
+            <div class="meta">SKU: YG-E009 &middot; Qty: 1</div>
+          </div>
+          <div class="cart-price">USD 980</div>
+        </div>
+
+        <div class="summary-row"><span>Subtotal</span><span>USD 3,430</span></div>
+        <div class="summary-row"><span>Shipping (international, insured)</span><span>USD 45</span></div>
+        <div class="summary-row"><span>Estimated tax</span><span>Calculated at payment</span></div>
+        <div class="summary-row total"><span>Total</span><span>USD 3,475</span></div>
+      </div>
+
+      <!-- ============================================================
+           PAYMENT — EDIT: swap the disabled radio inputs and button
+           below for real Stripe / PayPal elements once connected.
+           ============================================================ -->
+      <div class="checkout-card glass reveal" style="transition-delay:.08s">
+        <h3>Payment Method</h3>
+
+        <div class="payment-options">
+          <label class="payment-option">
+            <input type="radio" name="payment" disabled>
+            <div>
+              <div class="po-label">Credit / Debit Card</div>
+              <div class="po-sub">Powered by Stripe — not yet connected</div>
+            </div>
+          </label>
+          <label class="payment-option">
+            <input type="radio" name="payment" disabled>
+            <div>
+              <div class="po-label">PayPal</div>
+              <div class="po-sub">PayPal Checkout — not yet connected</div>
+            </div>
+          </label>
+        </div>
+
+        <button class="btn primary disabled" type="button" style="width:100%;justify-content:center;">
+          Complete Purchase — Coming Soon
+        </button>
+
+        <div style="text-align:center;margin:22px 0 8px;font-family:var(--mono);font-size:10.5px;color:var(--mist-soft);">— OR —</div>
+
+        <a class="btn on-dark" href="#" data-whatsapp-msg="Hello Yasiru, I'd like to complete an order: Royal Blue Sapphire Ring (YG-R014) and Ceylon Ruby Stud Earrings (YG-E009). Please advise on payment and shipping." style="width:100%;justify-content:center;background:var(--green-deep);color:#fff;border-color:var(--green-deep);">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.33 4.95L2.05 22l5.28-1.38a9.87 9.87 0 004.71 1.2h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2z"/></svg>
+          Complete Order via WhatsApp
+        </a>
+
+        <p style="font-family:var(--mono);font-size:10px;color:var(--mist-soft);margin-top:18px;line-height:1.7;">All international orders are shipped fully insured. Final total confirmed by WhatsApp before dispatch.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">Yasiru Gems <em>&amp; Jewellery</em></div>
+        <p style="color:var(--mist);font-size:13px;margin-top:10px;max-width:260px;">NGJA Silver Licensed &middot; Colombo, Sri Lanka</p>
+      </div>
+      <div class="footer-col">
+        <h5>Site</h5>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="what-we-do.html">What We Do</a>
+        <a href="shop.html">Shop Now</a>
+        <a href="contact.html">Contact Us</a>
+      </div>
+      <div class="footer-col">
+        <h5>Connect</h5>
+        <a href="https://www.facebook.com/profile.php?id=61566966630931" target="_blank" rel="noopener">Facebook</a>
+        <a href="mailto:Yasirugems@gmail.com">Email</a>
+        <a href="#" data-whatsapp-msg="Hello Yasiru, I'd like to get in touch about your gems and jewellery.">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-note">&copy; <span class="js-year"></span> Yasiru Gems &amp; Jewellery — NGJA Silver Licensed Dealer. All images protected; unauthorised reproduction prohibited.</div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
